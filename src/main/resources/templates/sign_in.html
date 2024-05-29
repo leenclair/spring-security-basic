@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Security test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all"
+          href="/css/sign.css" th:href="@{/css/sign.css}" />
+</head>
+<body>
+<div class="wrapper">
+    <h2>Sign in</h2>
+    <form method="post" action="" id="frm">
+        <label for="email"></label>
+        <input type="text" name="email" id="email" placeholder="example@gmail.com">
+        <label for="password"></label>
+        <input type="password" name="password" id="password" placeholder="password">
+        <label for="remember-me">
+            <input type="checkbox" name="remember-me" id="remember-me">remember me
+        </label>
+        <input type="submit" value="login" id="sign-btn">
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="/js/sign.js" th:src="@{/js/sign.js}"></script>
+</html>
